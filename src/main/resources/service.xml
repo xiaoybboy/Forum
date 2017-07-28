@@ -12,8 +12,8 @@
 	<context:component-scan base-package="com.xiao.service"></context:component-scan>
 
 	<bean id="transactionManager"
-		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
-		p:sessionFactory-ref="sessionFactory" />
+	class="org.springframework.orm.hibernate5.HibernateTransactionManager"
+	p:sessionFactory-ref="sessionFactory" />
 
 	<bean id="requestMappingHandlerAdapter"
 		class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
@@ -23,7 +23,7 @@
 	<aop:config>
 		<!--通过aop定义事务增强切面 -->
 		<aop:pointcut id="serviceMethod"
-			expression="execution(* com.smart.service.*Service.*(..))" />
+			expression="execution(* com.xiao.service.*Service.*(..))" />
 		<!--引用事务增强 -->
 		<aop:advisor pointcut-ref="serviceMethod" advice-ref="txAdvice" />
 	</aop:config>

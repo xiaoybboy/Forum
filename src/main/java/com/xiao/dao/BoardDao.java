@@ -21,8 +21,9 @@ public class BoardDao extends BaseDao<Board> {
 	private static final String GET_BOARD_NUM = "select count(f.boardId) from Board f";
 
 	public long getBoardNum() {
-		Iterator iter = getHibernateTemplate().iterate(GET_BOARD_NUM);
-		return (long) iter.next();
+		// Iterator iter = getHibernateTemplate().iterate(GET_BOARD_NUM);
+		Long res = ((Long) getHibernateTemplate().iterate(GET_BOARD_NUM).next()).longValue();
+		return res.longValue();
 	}
 
 }

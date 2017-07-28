@@ -96,6 +96,13 @@
 			<version>3.1.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/jstl/jstl -->
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
@@ -282,16 +289,16 @@
 
 	<properties>
 		<file.encoding>UTF-8</file.encoding>
-		<spring.version>4.2.2.RELEASE</spring.version>
-		<slf4j.version>1.7.5</slf4j.version>
-		<aspectj.version>1.8.1</aspectj.version>
+		<spring.version>4.3.9.RELEASE</spring.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<aspectj.version>1.8.10</aspectj.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<mysql.version>5.1.29</mysql.version>
 		<servlet.version>3.0-alpha-1</servlet.version>
 		<commons-dbcp.version>1.4</commons-dbcp.version>
 		<jetty.version>8.1.8.v20121106</jetty.version>
 		<aspectjweaver.version>1.6.8</aspectjweaver.version>
-		<hibernate.version>4.2.0.Final</hibernate.version>
+		<hibernate.version>5.2.10.Final</hibernate.version>
 		<mockito.version>1.10.19</mockito.version>
 		<unitils.version>3.4.2</unitils.version>
 		<selenium.version>2.41.0</selenium.version>
